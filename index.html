@@ -27,7 +27,7 @@
  
     <!-- Navbar -->
 
-    <header id="header" class="header fixed-top ">
+    <header id="header" class="header fixed-top header-color">
       <div class= "container-fluid container-xl d-flex align-items-center justify-content-between" >
 
         <a href="index.html" class="logo d-flex align-items-center">
@@ -41,12 +41,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item ms-4"><a class="nav-link scrollto active" aria-current="page" href="#hero">Home</a></li>
-                <li class="nav-item ms-4"><a class="nav-link scrollto " href="#about">About Us</a></li>
-                <li class="nav-item ms-4"><a class="nav-link scrollto " href="#features">Features</a></li>
-                <li class="nav-item ms-4"><a class="nav-link scrollto " href="#contact">Contact</a></li>
-                <li class="nav-item ms-4"><a class="getstarted scrollto" href="#about">Get Started</a></li>
+              <ul class="navbar-nav">
+                <li class="nav-item mx-2"><a class="nav-link scrollto active" aria-current="page" href="#hero">Home</a></li>
+                <li class="nav-item mx-2"><a class="nav-link scrollto " href="#about">About Us</a></li>
+                <li class="nav-item mx-2"><a class="nav-link scrollto " href="#features">Features</a></li>
+                <li class="nav-item mx-2"><a class="nav-link scrollto " href="#contact">Contact</a></li>
+                <li class="nav-item mx-2"><a class="getstarted scrollto" href="#about">Get Started</a></li>
               </ul>
             </div>
           </div>
@@ -177,28 +177,34 @@
           </div>
 
           <div class="col-lg-6 mt-4 mt-lg-0">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form w-100" data-aos="fade-up">
+            <!-- form -->
+            <form action="process-form.php" method="post" role="form"  class="php-email-form fw-100" data-aos="fade-up">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
                 </div>
+
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
                 </div>
+                
               </div>
+
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
               </div>
+
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
+
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">your message has been sent </div>
               </div>
+
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+            <!-- form -->
           </div>
         </div>
       </div>
