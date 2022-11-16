@@ -45,4 +45,8 @@ mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $subject, $message);
 
 mysqli_stmt_execute($stmt);
 
-echo "pesan sudah terkirim" ;
+//header('Location: index.html');
+
+$message = "pesan sudah terkirim";
+
+echo "<script type='text/javascript'>alert('$message');window.location.href='index.html';</script>";
